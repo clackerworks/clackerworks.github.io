@@ -5,7 +5,7 @@
 <body>
     <h3>P1 - MQTT Linked Bot</h3>
     <p>
-        This project demonstrates a proof-of-concept MQTT linked robot designed for autonomous navigation and obstacle avoidance. Each section of the robot utilizes independent, off-the-shelf Wi-Fi modules. The VPS handles the coordination between each section of the robot. For rapid response during bump and fall detection, a direct connection to the motor drive MCU triggers an IRQ.
+The goal of this project is to build a proof-of-concept MQTT-linked robot platform designed for expansion with minimal hardware changes as needed. Each section of the robot utilizes independent, off-the-shelf Wi-Fi modules. The VPS handles coordination between each section. For rapid response during bump and fall detection, a direct connection to the motor drive MCU triggers an IRQ.
     </p>
     <p>
         <img src="img/20250308_112417~2_p1_small.jpg" alt="P1 Bot Prototype" width="300" height="200">
@@ -17,7 +17,7 @@
         <img src="img/IMG_7978_small.JPG" alt="P1 Bot Components" width="300" height="200">
     </p>
     <p>
-        A single V54L0X Time of Flight Sensor (a distance measurement sensor) was used to map the surroundings in 2D, which proved sufficient for collision avoidance. Various sensors, including a fall detection sensor, communicate with a Virtual Private Server (VPS) and directly with the motor drive Microcontroller Unit (MCU). When the fall detection sensor is triggered, an Interrupt Request (IRQ) is activated, immediately stopping the bot's movement. After the MQTT message is processed, a simple rule based AI algorithm determines the next instruction, typically a movement in the opposite direction to clear the fall sensor and remap the surroundings.
+        A single V53LOX Time of Flight Sensor (a distance measurement sensor) was used to map the surroundings in 2D, which proved sufficient for collision avoidance. Various sensors, including a fall detection sensor, communicate with a Virtual Private Server (VPS) and directly with the motor drive Microcontroller Unit (MCU). When the fall detection sensor is triggered, an Interrupt Request (IRQ) is activated, immediately stopping the bot's movement. After the MQTT message is processed, a simple rule based AI algorithm determines the next instruction, typically a movement in the opposite direction to clear the fall sensor and remap the surroundings.
     </p>
     <p>
         Next Steps:
