@@ -19,7 +19,7 @@ to test the RSSI fingerprinting technique of geolocation within a local region.
         <img src="img/IMG_7978_small.JPG" alt="P1 Bot Components" width=500px>
     </p>
     <p>
-        A single V53LOX Time of Flight Sensor (a distance measurement sensor) was used to map the surroundings in 2D, which proved sufficient for collision avoidance. Various sensors, including a fall detection sensor, communicate with a Virtual Private Server (VPS) and directly with the motor drive Microcontroller Unit (MCU). When the fall detection sensor is triggered, an Interrupt Request (IRQ) is activated, immediately stopping the bot's movement. After the MQTT message is processed, a simple rule based AI algorithm determines the next instruction, typically a movement in the opposite direction to clear the fall sensor and remap the surroundings.
+        A single VL53LOX Time of Flight Sensor (a distance measurement sensor) was used to map the surroundings in 2D, which proved sufficient for collision avoidance. Various sensors, including a fall detection sensor, communicate with a Virtual Private Server (VPS) and directly with the motor drive Microcontroller Unit (MCU). When the fall detection sensor is triggered, an Interrupt Request (IRQ) is activated, immediately stopping the bot's movement. After the MQTT message is processed, a simple rule based AI algorithm determines the next instruction, typically a movement in the opposite direction to clear the fall sensor and remap the surroundings.
     </p>
     <p>
         Next Steps:
